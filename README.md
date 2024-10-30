@@ -51,13 +51,6 @@ Review Words: The application will display words for review based on the interva
 - **AI-Assisted Development**: This project was developed entirely through instructions (prompts) provided to an AI coding tool, demonstrating the potential of AI in the coding process and marking a new era of programming.
 
 ### Acknowledgments
-This project exemplifies the future of coding with AI agents, showcasing how technology can assist developers in creating functional applications without traditional coding methods.
+This project exemplifies the future of coding with AI agents, using text prompts instead of traditional coding.
 
 vbnet
-
-### Notes on the README Structure:
-- **Clear Sections**: The README is structured with clear headings to help users navigate easily.
-- **Emphasis on AI Assistance**: It highlights the innovative aspect of using AI for coding, as you requested.
-- **Usage Instructions**: Provides straightforward instructions on how to set up and use the application, making it user-friendly.
-
-Feel free to modify any sections or add any additional details as necessary! If you have any further requests or need adjustments, just let me know!
