@@ -50,7 +50,7 @@ Review Words: The application will display words for review based on the interva
 - **Shuffling for Variety**: Words are shuffled before review to provide a varied learning experience, preventing memorization based solely on order.
 - **AI-Assisted Development**: This project was developed entirely through instructions (prompts) provided to an AI coding tool, demonstrating the potential of AI in the coding process and marking a new era of programming.
 
-Acknowledgments
+### Acknowledgments
 This project exemplifies the future of coding with AI agents, showcasing how technology can assist developers in creating functional applications without traditional coding methods.
 
 vbnet
