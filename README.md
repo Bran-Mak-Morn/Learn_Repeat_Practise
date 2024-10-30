@@ -46,9 +46,9 @@ python main.py
 Review Words: The application will display words for review based on the intervals defined in the word_manager.py. Use the space bar to toggle between the Czech and Spanish translations, and navigate through the words.
 
 ## Project Highlights
-Dynamic Word Review: The application checks the dates words were added and presents them for review based on specific intervals, ensuring effective learning.
-Shuffling for Variety: Words are shuffled before review to provide a varied learning experience, preventing memorization based solely on order.
-AI-Assisted Development: This project was developed entirely through instructions (prompts) provided to an AI coding tool, demonstrating the potential of AI in the coding process and marking a new era of programming.
+- **Dynamic Word Review**: The application checks the dates words were added and presents them for review based on specific intervals, ensuring effective learning.
+- **Shuffling for Variety**: Words are shuffled before review to provide a varied learning experience, preventing memorization based solely on order.
+- **AI-Assisted Development**: This project was developed entirely through instructions (prompts) provided to an AI coding tool, demonstrating the potential of AI in the coding process and marking a new era of programming.
 
 Acknowledgments
 This project exemplifies the future of coding with AI agents, showcasing how technology can assist developers in creating functional applications without traditional coding methods.
