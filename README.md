@@ -18,8 +18,10 @@ This project is under the MIT license. Libraries and modules have their own lice
 
 ## Files
 - `word_manager.py`: Contains the `WordManager` class for managing words from a CSV file, including loading, checking intervals for review, and retrieving words.
-- `word_review_app.py`: Implements the `WordReviewApp` class for the GUI, allowing users to review words and manage their learning experience.
-- `data.csv`: Sample CSV file containing Spanish words and their Czech translations along with the dates they were added.
+- `gui.py`: Implements the `WordReviewApp` class for the GUI, allowing users to review words and manage their learning experience.
+- `app.py`: Main app function - app factory.
+- `main.py`: Runs the code.
+- `words_to_review.csv`: Sample CSV file containing Spanish words and their Czech translations along with the dates they were added.
 
 ## Setup
 
@@ -39,7 +41,7 @@ pip install -r requirements.txt
 Load your words: Update the data.csv file with Spanish words and their Czech translations.
 Run the application:
 ```bash
-python word_review_app.py
+python main.py
 ```
 Review Words: The application will display words for review based on the intervals defined in the word_manager.py. Use the space bar to toggle between the Czech and Spanish translations, and navigate through the words.
 
