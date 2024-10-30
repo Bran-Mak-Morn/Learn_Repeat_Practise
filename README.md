@@ -34,12 +34,13 @@ This project is under the MIT license. Libraries and modules have their own lice
 Install packages:
 ```bash
 pip install -r requirements.txt
-
+```bash
 ## Usage
 Load your words: Update the data.csv file with Spanish words and their Czech translations.
 Run the application:
-bash
+```bash
 python word_review_app.py
+```bash
 Review Words: The application will display words for review based on the intervals defined in the word_manager.py. Use the space bar to toggle between the Czech and Spanish translations, and navigate through the words.
 
 ## Project Highlights
