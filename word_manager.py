@@ -37,7 +37,7 @@ class WordManager:
                         czech_translation = row[2]
                         words.append((date_added, spanish_word, czech_translation))
                     except ValueError:
-                        print(f"Invalid date: {row[0]}")
+                        print(f"Invalid date: {row[0]} with Spanish: {row[1]} Czech: {row[2]}")
                         invalid_count += 1
 
             if invalid_count > 0:
@@ -82,3 +82,17 @@ class WordManager:
         """
         end_index = start_index + batch_size
         return self.words_to_review[start_index:end_index]
+
+    def select_random_words_for_review(self):
+        """
+        Randomly selects 50 words from the loaded words and assigns them to self.words_to_review.
+        """
+        if len(self.words) < 50:
+            print("Warning: Fewer than 50 words available. Selecting all available words.")
+            self.words_to_review = self.words
+        else:
+            self.words_to_review.clear()
+            for date_added, spanish_word, czech_translation in self.words:
+                self.words_to_review.append((spanish_word, czech_translation))
+            self.words_to_review = random.sample(self.words_to_review, 50)
+

@@ -32,11 +32,17 @@ class WordReviewApp:
         self.root.bind("<space>", self.handle_space_press)
 
         # Buttons
-        self.button_next_batch = tk.Button(self.root, text="Another Group of 50", command=self.load_next_batch)
-        self.button_next_batch.pack(side="left", padx=20)
+        self.button_next_batch = tk.Button(self.root, text="Another Group of 50", fg="green", font=("Helvetica", 10, "bold"),
+                                           command=self.load_next_batch, width=17)
+        self.button_next_batch.pack(side="left", padx=30, pady=15)
 
-        self.button_exit = tk.Button(self.root, text="I'm Done", command=self.root.quit)
-        self.button_exit.pack(side="right", padx=20)
+        self.button_random_words = tk.Button(self.root, text="Random Words", fg="blue", font=("Helvetica", 10, "bold"),
+                                             command=self.load_random_words, width=17)
+        self.button_random_words.pack(side="left", padx=30, pady=15)
+
+        self.button_exit = tk.Button(self.root, text="I'm Done", fg="red", font=("Helvetica", 10, "bold"),
+                                     command=self.root.quit, width=17)
+        self.button_exit.pack(side="right", padx=30, pady=15)
 
     def center_window(self):
         """
@@ -108,6 +114,21 @@ class WordReviewApp:
             return
 
         self.batch_start_index += self.batch_size  # Update start index for the next batch
+        self.current_word_index = 0
+        self.is_showing_czech = True
+        self.show_next_word()
+
+    def load_random_words(self):
+        """
+        Load 50 random words using WordManager's select_random_words_for_review method.
+        """
+        self.word_manager.select_random_words_for_review()
+        self.words_to_review = self.word_manager.words_to_review
+
+        if not self.words_to_review:
+            self.set_label_message("No words available for random selection.")
+            return
+
         self.current_word_index = 0
         self.is_showing_czech = True
         self.show_next_word()
